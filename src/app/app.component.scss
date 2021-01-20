@@ -5,6 +5,13 @@ body {
     overflow-x: hidden;
 }
 
+.main-container {
+    min-height: calc(100vh - 172px);
+    @media only screen and (max-width: 396px) {
+        min-height: calc(100vh - 50px);
+    }
+}
+
 .carousel_form {
     .carousel {
         width: 67%;
@@ -22,7 +29,15 @@ body {
         left: 0;
         background: #29abe2;
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
+        .carousel {
+            width: 100%;
+        }
+        .form {
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 786px) {
         width: 100%;
         max-width: 100%;
         padding: 0;
@@ -31,9 +46,6 @@ body {
         &::before {
             display: none;
         }
-        .carousel {
-            width: 100%;
-        }
         .form {
             position: absolute;
             top: 334px;
@@ -41,15 +53,25 @@ body {
             width: 65%;
         }
     }
-    @media only screen and (max-width: 360px) {
+    @media only screen and (max-width: 396px) {
+        .form {
+            width: 85%;
+            left: 50%;
+            transform: translate(-50%, 42%);
+            top: 50%;
+        }
+    }
+    @media only screen and (max-width: 393px) {
         height: 400px;
         .form {
             position: absolute;
-            top: 62%;
-            width: 100%;
-            left: 0;
-            display: flex;
-            justify-content: center;
+            top: 40%;
+            width: 85%;
+        }
+    }
+    @media only screen and (max-width: 360px) {
+        .form {
+            top: 50%;
         }
     }
 }
