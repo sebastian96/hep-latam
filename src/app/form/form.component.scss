@@ -1,0 +1,96 @@
+.form {
+    padding: 15px;
+    background: #e6e6e6;
+    min-height: 509px;
+    .btn {
+        background: #bbd550;
+        box-shadow: 0px 4px 0px -1px rgba(150, 168, 42, 0.9);
+        font-weight: 600;
+        font-size: 1.1rem;
+        border: none;
+        width: 50%;
+    }
+    select {
+        color: transparent;
+    }
+    @media only screen and (max-width: 1024px) {
+        min-height: 429px;
+        .input-group {
+            &.mb-4 {
+                margin-bottom: 20px !important;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        min-height: auto;
+        width: 75%;
+        border-top: 3px solid #29abe2;
+        .input-group {
+            &.mb-4 {
+                margin-bottom: 0px !important;
+            }
+            select {
+                color: #bcbcbc;
+            }
+            .form-control {
+                border-radius: 0;
+            }
+            .form-label {
+                display: none;
+            }
+            .w-50:nth-of-type(1) {
+                width: 68% !important;
+            }
+            .w-50:nth-of-type(2) {
+                width: 32% !important;
+            }
+            .pl-1,
+            .pr-1 {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+        }
+        .btn {
+            margin-top: 15px !important;
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 360px) {
+        width: 100%;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: transparent;
+}
+
+ :-moz-placeholder {
+    /* Firefox 18- */
+    color: transparent;
+}
+
+ ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: transparent;
+}
+
+ :-ms-input-placeholder {
+    color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+     ::-webkit-input-placeholder {
+        color: #bcbcbc;
+    }
+     :-moz-placeholder {
+        /* Firefox 18- */
+        color: #bcbcbc;
+    }
+     ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #bcbcbc;
+    }
+     :-ms-input-placeholder {
+        color: #bcbcbc;
+    }
+}

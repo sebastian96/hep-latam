@@ -1,0 +1,107 @@
+.custom-bg {
+    background: #4d4d4d;
+    .navbar-brand {
+        font-family: 'Courgette', cursive;
+        color: #fff;
+        font-size: 1.9rem;
+        span {
+            color: #29abe2;
+            font-size: 1rem;
+        }
+    }
+    .mobile-menu {
+        display: none;
+    }
+    .fa-angle-up,
+    .fa-angle-down {
+        display: none;
+    }
+    .nav-link {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .header-mobile {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            .navbar-brand {
+                margin: auto;
+            }
+        }
+        .menu-mobile {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background: #212121;
+            position: absolute;
+            top: 71px;
+            left: 0;
+            z-index: 1;
+            .navbar-nav {
+                padding: 25px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 25px;
+                    height: 80%;
+                    border: 1px solid #bcbcbc;
+                }
+                .dropdown {
+                    display: none;
+                }
+                .mobile-menu {
+                    display: block;
+                }
+                .fa-angle-up,
+                .fa-angle-down {
+                    display: block;
+                }
+                li {
+                    margin-left: 35px;
+                    a {
+                        color: #bcbcbc !important;
+                    }
+                    li {
+                        color: #bcbcbc !important;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 360px) {
+        .menu-mobile {
+            .navbar-nav {
+                padding: 15px;
+                li {
+                    margin: 0px 15px;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    min-height: 52px;
+    &.show {
+        position: fixed;
+        top: 69px;
+        width: 100vw;
+        left: 0;
+        display: flex;
+        background: #212121;
+        padding-left: 137px;
+        border-radius: inherit;
+        .dropdown-item {
+            color: #fff;
+            &:hover {
+                font-size: 1.1rem;
+                background: none;
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.carousel-control {
+    &-prev,
+    &-next {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 86%;
+        i {
+            color: #000;
+            font-size: 1.7rem;
+            font-weight: 900;
+        }
+    }
+    &-prev {
+        left: 2%;
+    }
+    &-next {
+        left: 9%;
+    }
+    @media only screen and (max-width: 768px) {
+        .carousel-control {
+            &-prev {
+                left: 4%;
+            }
+            &-next {
+                left: 11%;
+            }
+        }
+    }
+    @media only screen and (max-width: 360px) {
+        .carousel-control {
+            &-prev,
+            &-next {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .carousel-inner {
+        height: 170px;
+    }
+}

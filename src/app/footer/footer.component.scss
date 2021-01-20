@@ -1,0 +1,83 @@
+footer {
+    .information {
+        background: #7c7c7c;
+        padding: 15px;
+        .list-items {
+            li {
+                margin-bottom: 10px;
+                color: #fff;
+                a {
+                    color: #fff;
+                    font-weight: 600;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .social-media {
+            text-align: center;
+            p {
+                color: #fff;
+                font-weight: 600;
+            }
+            a {
+                display: inline-flex;
+                height: 42px;
+                width: 42px;
+                margin: 0px 15px;
+                border-radius: 50%;
+                background: #fff;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                i {
+                    color: #7c7c7c;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    .copy {
+        background: #000;
+        p {
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+            margin: 0;
+            padding: 5px;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        position: relative;
+        margin-top: 30px;
+    }
+    @media only screen and (max-width: 768px) {
+        margin-top: 0;
+        .information {
+            padding: 66px 0px;
+        }
+    }
+    @media only screen and (max-width: 360px) {
+        .information {
+            padding: 15px 0px;
+            .list-items {
+                padding: 0px 10px;
+                li {
+                    font-size: .7rem;
+                }
+            }
+            .social-media {
+                p {
+                    font-size: .7rem;
+                }
+                a {
+                    margin: 0px 2px;
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
